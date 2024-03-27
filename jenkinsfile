@@ -33,6 +33,15 @@ pipeline {
             }
         }
 
+        stage('static code analysics'){
+            steps{
+                scripts{
+                    withSonarQubeEnv(credentialsId: '8dcda4d0-3dd2-4477-ad74-c12184d70fc5') 
+                    echo 'mvn clean package sonar:sonar'
+                }
+            }
+        }
+
     }
 }
 
