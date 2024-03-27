@@ -36,7 +36,7 @@ pipeline {
         stage('static code analysics'){
             steps{
                 scripts{
-                    withSonarQubeEnv(credentialsId: '8dcda4d0-3dd2-4477-ad74-c12184d70fc5') 
+                    withSonarQubeEnv(credentialsId: '5e245321-4aac-401a-9244-61127c253bad') 
                     echo 'mvn clean package sonar:sonar'
                 }
             }
