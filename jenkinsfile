@@ -1,0 +1,15 @@
+pipeline {
+
+    agent any
+
+    stages{
+
+        stage('git checkout'){
+
+            steps{
+
+                echo 'git branch: 'main', credentialsId: '4977d529-3ab1-482f-99c1-4c2b04c95117', url: 'https://github.com/bhargavichinthakunta/demo-counter-app.git''
+            }
+        }
+    }
+}
