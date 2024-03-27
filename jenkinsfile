@@ -18,5 +18,12 @@ pipeline {
                 echo 'mvn test'
             }
         }
+
+        stage('intigration testing'){
+
+            steps{
+                echo 'mvn verify -DskipUnitTests'
+            }
+        }
     }
 }
