@@ -11,5 +11,12 @@ pipeline {
                 echo 'https://github.com/bhargavichinthakunta/demo-counter-app.git'
             }
         }
+
+        stage('unit testing'){
+
+            steps{
+                echo 'mvn test'
+            }
+        }
     }
 }
