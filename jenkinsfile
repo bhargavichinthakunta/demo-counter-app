@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+
+    stages{
+        stage('git checkout'){
+            steps{
+                sh 'https://github.com/bhargavichinthakunta/demo-counter-app.git'
+            }
+        }
+    }
+}
